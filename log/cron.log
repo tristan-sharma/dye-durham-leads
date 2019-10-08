@@ -1,0 +1,2187 @@
+rake aborted!
+PG::ConnectionBad: FATAL:  role "mockapp" does not exist
+/Users/tristansharma/mockapp/app/models/match.rb:17:in `block in updateMatches'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `each'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `updateMatches'
+/Users/tristansharma/mockapp/lib/tasks/match_update.rake:3:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+rake aborted!
+PG::ConnectionBad: FATAL:  role "mockapp" does not exist
+/Users/tristansharma/mockapp/app/models/match.rb:17:in `block in updateMatches'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `each'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `updateMatches'
+/Users/tristansharma/mockapp/lib/tasks/match_update.rake:3:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+rake aborted!
+PG::ConnectionBad: FATAL:  role "mockapp" does not exist
+/Users/tristansharma/mockapp/app/models/match.rb:17:in `block in updateMatches'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `each'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `updateMatches'
+/Users/tristansharma/mockapp/lib/tasks/match_update.rake:3:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+rake aborted!
+PG::ConnectionBad: FATAL:  role "mockapp" does not exist
+/Users/tristansharma/mockapp/app/models/match.rb:17:in `block in updateMatches'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `each'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `updateMatches'
+/Users/tristansharma/mockapp/lib/tasks/match_update.rake:3:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+rake aborted!
+PG::ConnectionBad: FATAL:  role "mockapp" does not exist
+/Users/tristansharma/mockapp/app/models/match.rb:17:in `block in updateMatches'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `each'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `updateMatches'
+/Users/tristansharma/mockapp/lib/tasks/match_update.rake:3:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+rake aborted!
+PG::ConnectionBad: FATAL:  role "mockapp" does not exist
+/Users/tristansharma/mockapp/app/models/match.rb:17:in `block in updateMatches'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `each'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `updateMatches'
+/Users/tristansharma/mockapp/lib/tasks/match_update.rake:3:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+rake aborted!
+PG::ConnectionBad: FATAL:  role "mockapp" does not exist
+/Users/tristansharma/mockapp/app/models/match.rb:17:in `block in updateMatches'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `each'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `updateMatches'
+/Users/tristansharma/mockapp/lib/tasks/match_update.rake:3:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+rake aborted!
+PG::ConnectionBad: FATAL:  role "mockapp" does not exist
+/Users/tristansharma/mockapp/app/models/match.rb:17:in `block in updateMatches'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `each'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `updateMatches'
+/Users/tristansharma/mockapp/lib/tasks/match_update.rake:3:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+rake aborted!
+PG::ConnectionBad: FATAL:  role "mockapp" does not exist
+/Users/tristansharma/mockapp/app/models/match.rb:17:in `block in updateMatches'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `each'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `updateMatches'
+/Users/tristansharma/mockapp/lib/tasks/match_update.rake:3:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+rake aborted!
+PG::ConnectionBad: FATAL:  role "mockapp" does not exist
+/Users/tristansharma/mockapp/app/models/match.rb:17:in `block in updateMatches'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `each'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `updateMatches'
+/Users/tristansharma/mockapp/lib/tasks/match_update.rake:3:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+rake aborted!
+PG::ConnectionBad: FATAL:  role "mockapp" does not exist
+/Users/tristansharma/mockapp/app/models/match.rb:17:in `block in updateMatches'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `each'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `updateMatches'
+/Users/tristansharma/mockapp/lib/tasks/match_update.rake:3:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+rake aborted!
+PG::ConnectionBad: FATAL:  role "mockapp" does not exist
+/Users/tristansharma/mockapp/app/models/match.rb:17:in `block in updateMatches'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `each'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `updateMatches'
+/Users/tristansharma/mockapp/lib/tasks/match_update.rake:3:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+rake aborted!
+PG::ConnectionBad: FATAL:  role "mockapp" does not exist
+/Users/tristansharma/mockapp/app/models/match.rb:17:in `block in updateMatches'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `each'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `updateMatches'
+/Users/tristansharma/mockapp/lib/tasks/match_update.rake:3:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+rake aborted!
+PG::ConnectionBad: FATAL:  role "mockapp" does not exist
+/Users/tristansharma/mockapp/app/models/match.rb:17:in `block in updateMatches'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `each'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `updateMatches'
+/Users/tristansharma/mockapp/lib/tasks/match_update.rake:3:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+rake aborted!
+PG::ConnectionBad: FATAL:  role "mockapp" does not exist
+/Users/tristansharma/mockapp/app/models/match.rb:17:in `block in updateMatches'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `each'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `updateMatches'
+/Users/tristansharma/mockapp/lib/tasks/match_update.rake:3:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+rake aborted!
+PG::ConnectionBad: FATAL:  role "mockapp" does not exist
+/Users/tristansharma/mockapp/app/models/match.rb:17:in `block in updateMatches'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `each'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `updateMatches'
+/Users/tristansharma/mockapp/lib/tasks/match_update.rake:3:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+rake aborted!
+PG::ConnectionBad: FATAL:  role "mockapp" does not exist
+/Users/tristansharma/mockapp/app/models/match.rb:17:in `block in updateMatches'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `each'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `updateMatches'
+/Users/tristansharma/mockapp/lib/tasks/match_update.rake:3:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+rake aborted!
+PG::ConnectionBad: FATAL:  role "mockapp" does not exist
+/Users/tristansharma/mockapp/app/models/match.rb:17:in `block in updateMatches'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `each'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `updateMatches'
+/Users/tristansharma/mockapp/lib/tasks/match_update.rake:3:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+rake aborted!
+PG::ConnectionBad: FATAL:  role "mockapp" does not exist
+/Users/tristansharma/mockapp/app/models/match.rb:17:in `block in updateMatches'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `each'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `updateMatches'
+/Users/tristansharma/mockapp/lib/tasks/match_update.rake:3:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+rake aborted!
+PG::ConnectionBad: FATAL:  role "mockapp" does not exist
+/Users/tristansharma/mockapp/app/models/match.rb:17:in `block in updateMatches'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `each'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `updateMatches'
+/Users/tristansharma/mockapp/lib/tasks/match_update.rake:3:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+rake aborted!
+PG::ConnectionBad: FATAL:  role "mockapp" does not exist
+/Users/tristansharma/mockapp/app/models/match.rb:17:in `block in updateMatches'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `each'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `updateMatches'
+/Users/tristansharma/mockapp/lib/tasks/match_update.rake:3:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+rake aborted!
+PG::ConnectionBad: FATAL:  role "mockapp" does not exist
+/Users/tristansharma/mockapp/app/models/match.rb:17:in `block in updateMatches'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `each'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `updateMatches'
+/Users/tristansharma/mockapp/lib/tasks/match_update.rake:3:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+rake aborted!
+PG::ConnectionBad: FATAL:  role "mockapp" does not exist
+/Users/tristansharma/mockapp/app/models/match.rb:17:in `block in updateMatches'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `each'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `updateMatches'
+/Users/tristansharma/mockapp/lib/tasks/match_update.rake:3:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+rake aborted!
+PG::ConnectionBad: FATAL:  role "mockapp" does not exist
+/Users/tristansharma/mockapp/app/models/match.rb:17:in `block in updateMatches'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `each'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `updateMatches'
+/Users/tristansharma/mockapp/lib/tasks/match_update.rake:3:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+rake aborted!
+PG::ConnectionBad: FATAL:  role "mockapp" does not exist
+/Users/tristansharma/mockapp/app/models/match.rb:17:in `block in updateMatches'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `each'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `updateMatches'
+/Users/tristansharma/mockapp/lib/tasks/match_update.rake:3:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+rake aborted!
+PG::ConnectionBad: FATAL:  role "mockapp" does not exist
+/Users/tristansharma/mockapp/app/models/match.rb:17:in `block in updateMatches'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `each'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `updateMatches'
+/Users/tristansharma/mockapp/lib/tasks/match_update.rake:3:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+rake aborted!
+PG::ConnectionBad: FATAL:  role "mockapp" does not exist
+/Users/tristansharma/mockapp/app/models/match.rb:17:in `block in updateMatches'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `each'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `updateMatches'
+/Users/tristansharma/mockapp/lib/tasks/match_update.rake:3:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+rake aborted!
+PG::ConnectionBad: FATAL:  role "mockapp" does not exist
+/Users/tristansharma/mockapp/app/models/match.rb:17:in `block in updateMatches'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `each'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `updateMatches'
+/Users/tristansharma/mockapp/lib/tasks/match_update.rake:3:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+rake aborted!
+PG::ConnectionBad: FATAL:  role "mockapp" does not exist
+/Users/tristansharma/mockapp/app/models/match.rb:17:in `block in updateMatches'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `each'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `updateMatches'
+/Users/tristansharma/mockapp/lib/tasks/match_update.rake:3:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+rake aborted!
+PG::ConnectionBad: FATAL:  role "mockapp" does not exist
+/Users/tristansharma/mockapp/app/models/match.rb:17:in `block in updateMatches'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `each'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `updateMatches'
+/Users/tristansharma/mockapp/lib/tasks/match_update.rake:3:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+rake aborted!
+PG::ConnectionBad: FATAL:  role "mockapp" does not exist
+/Users/tristansharma/mockapp/app/models/match.rb:17:in `block in updateMatches'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `each'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `updateMatches'
+/Users/tristansharma/mockapp/lib/tasks/match_update.rake:3:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+rake aborted!
+PG::ConnectionBad: FATAL:  role "mockapp" does not exist
+/Users/tristansharma/mockapp/app/models/match.rb:17:in `block in updateMatches'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `each'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `updateMatches'
+/Users/tristansharma/mockapp/lib/tasks/match_update.rake:3:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+rake aborted!
+PG::ConnectionBad: FATAL:  role "mockapp" does not exist
+/Users/tristansharma/mockapp/app/models/match.rb:17:in `block in updateMatches'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `each'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `updateMatches'
+/Users/tristansharma/mockapp/lib/tasks/match_update.rake:3:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+rake aborted!
+PG::ConnectionBad: FATAL:  role "mockapp" does not exist
+/Users/tristansharma/mockapp/app/models/match.rb:17:in `block in updateMatches'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `each'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `updateMatches'
+/Users/tristansharma/mockapp/lib/tasks/match_update.rake:3:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+rake aborted!
+PG::ConnectionBad: FATAL:  role "mockapp" does not exist
+/Users/tristansharma/mockapp/app/models/match.rb:17:in `block in updateMatches'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `each'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `updateMatches'
+/Users/tristansharma/mockapp/lib/tasks/match_update.rake:3:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+rake aborted!
+PG::ConnectionBad: FATAL:  role "mockapp" does not exist
+/Users/tristansharma/mockapp/app/models/match.rb:17:in `block in updateMatches'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `each'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `updateMatches'
+/Users/tristansharma/mockapp/lib/tasks/match_update.rake:3:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+rake aborted!
+PG::ConnectionBad: FATAL:  role "mockapp" does not exist
+/Users/tristansharma/mockapp/app/models/match.rb:17:in `block in updateMatches'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `each'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `updateMatches'
+/Users/tristansharma/mockapp/lib/tasks/match_update.rake:3:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+rake aborted!
+PG::ConnectionBad: FATAL:  role "mockapp" does not exist
+/Users/tristansharma/mockapp/app/models/match.rb:17:in `block in updateMatches'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `each'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `updateMatches'
+/Users/tristansharma/mockapp/lib/tasks/match_update.rake:3:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+rake aborted!
+PG::ConnectionBad: FATAL:  role "mockapp" does not exist
+/Users/tristansharma/mockapp/app/models/match.rb:17:in `block in updateMatches'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `each'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `updateMatches'
+/Users/tristansharma/mockapp/lib/tasks/match_update.rake:3:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+rake aborted!
+PG::ConnectionBad: FATAL:  role "mockapp" does not exist
+/Users/tristansharma/mockapp/app/models/match.rb:17:in `block in updateMatches'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `each'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `updateMatches'
+/Users/tristansharma/mockapp/lib/tasks/match_update.rake:3:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+rake aborted!
+PG::ConnectionBad: FATAL:  role "mockapp" does not exist
+/Users/tristansharma/mockapp/app/models/match.rb:17:in `block in updateMatches'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `each'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `updateMatches'
+/Users/tristansharma/mockapp/lib/tasks/match_update.rake:3:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+rake aborted!
+PG::ConnectionBad: FATAL:  role "mockapp" does not exist
+/Users/tristansharma/mockapp/app/models/match.rb:17:in `block in updateMatches'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `each'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `updateMatches'
+/Users/tristansharma/mockapp/lib/tasks/match_update.rake:3:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+rake aborted!
+PG::ConnectionBad: FATAL:  role "mockapp" does not exist
+/Users/tristansharma/mockapp/app/models/match.rb:17:in `block in updateMatches'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `each'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `updateMatches'
+/Users/tristansharma/mockapp/lib/tasks/match_update.rake:3:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+rake aborted!
+PG::ConnectionBad: FATAL:  role "mockapp" does not exist
+/Users/tristansharma/mockapp/app/models/match.rb:17:in `block in updateMatches'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `each'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `updateMatches'
+/Users/tristansharma/mockapp/lib/tasks/match_update.rake:3:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+rake aborted!
+PG::ConnectionBad: FATAL:  role "mockapp" does not exist
+/Users/tristansharma/mockapp/app/models/match.rb:17:in `block in updateMatches'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `each'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `updateMatches'
+/Users/tristansharma/mockapp/lib/tasks/match_update.rake:3:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+rake aborted!
+PG::ConnectionBad: FATAL:  role "mockapp" does not exist
+/Users/tristansharma/mockapp/app/models/match.rb:17:in `block in updateMatches'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `each'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `updateMatches'
+/Users/tristansharma/mockapp/lib/tasks/match_update.rake:3:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+rake aborted!
+PG::ConnectionBad: FATAL:  role "mockapp" does not exist
+/Users/tristansharma/mockapp/app/models/match.rb:17:in `block in updateMatches'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `each'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `updateMatches'
+/Users/tristansharma/mockapp/lib/tasks/match_update.rake:3:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+rake aborted!
+PG::ConnectionBad: FATAL:  role "mockapp" does not exist
+/Users/tristansharma/mockapp/app/models/match.rb:17:in `block in updateMatches'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `each'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `updateMatches'
+/Users/tristansharma/mockapp/lib/tasks/match_update.rake:3:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+rake aborted!
+PG::ConnectionBad: FATAL:  role "mockapp" does not exist
+/Users/tristansharma/mockapp/app/models/match.rb:17:in `block in updateMatches'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `each'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `updateMatches'
+/Users/tristansharma/mockapp/lib/tasks/match_update.rake:3:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+rake aborted!
+PG::ConnectionBad: FATAL:  role "mockapp" does not exist
+/Users/tristansharma/mockapp/app/models/match.rb:17:in `block in updateMatches'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `each'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `updateMatches'
+/Users/tristansharma/mockapp/lib/tasks/match_update.rake:3:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+rake aborted!
+PG::ConnectionBad: FATAL:  role "mockapp" does not exist
+/Users/tristansharma/mockapp/app/models/match.rb:17:in `block in updateMatches'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `each'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `updateMatches'
+/Users/tristansharma/mockapp/lib/tasks/match_update.rake:3:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+rake aborted!
+PG::ConnectionBad: FATAL:  role "mockapp" does not exist
+/Users/tristansharma/mockapp/app/models/match.rb:17:in `block in updateMatches'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `each'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `updateMatches'
+/Users/tristansharma/mockapp/lib/tasks/match_update.rake:3:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+rake aborted!
+PG::ConnectionBad: FATAL:  role "mockapp" does not exist
+/Users/tristansharma/mockapp/app/models/match.rb:17:in `block in updateMatches'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `each'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `updateMatches'
+/Users/tristansharma/mockapp/lib/tasks/match_update.rake:3:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+rake aborted!
+PG::ConnectionBad: FATAL:  role "mockapp" does not exist
+/Users/tristansharma/mockapp/app/models/match.rb:17:in `block in updateMatches'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `each'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `updateMatches'
+/Users/tristansharma/mockapp/lib/tasks/match_update.rake:3:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+rake aborted!
+PG::ConnectionBad: FATAL:  role "mockapp" does not exist
+/Users/tristansharma/mockapp/app/models/match.rb:17:in `block in updateMatches'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `each'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `updateMatches'
+/Users/tristansharma/mockapp/lib/tasks/match_update.rake:3:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+rake aborted!
+PG::ConnectionBad: FATAL:  role "mockapp" does not exist
+/Users/tristansharma/mockapp/app/models/match.rb:17:in `block in updateMatches'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `each'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `updateMatches'
+/Users/tristansharma/mockapp/lib/tasks/match_update.rake:3:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+rake aborted!
+PG::ConnectionBad: FATAL:  role "mockapp" does not exist
+/Users/tristansharma/mockapp/app/models/match.rb:17:in `block in updateMatches'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `each'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `updateMatches'
+/Users/tristansharma/mockapp/lib/tasks/match_update.rake:3:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+rake aborted!
+PG::ConnectionBad: FATAL:  role "mockapp" does not exist
+/Users/tristansharma/mockapp/app/models/match.rb:17:in `block in updateMatches'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `each'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `updateMatches'
+/Users/tristansharma/mockapp/lib/tasks/match_update.rake:3:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+rake aborted!
+PG::ConnectionBad: FATAL:  role "mockapp" does not exist
+/Users/tristansharma/mockapp/app/models/match.rb:17:in `block in updateMatches'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `each'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `updateMatches'
+/Users/tristansharma/mockapp/lib/tasks/match_update.rake:3:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+rake aborted!
+PG::ConnectionBad: FATAL:  role "mockapp" does not exist
+/Users/tristansharma/mockapp/app/models/match.rb:17:in `block in updateMatches'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `each'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `updateMatches'
+/Users/tristansharma/mockapp/lib/tasks/match_update.rake:3:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+rake aborted!
+PG::ConnectionBad: FATAL:  role "mockapp" is not permitted to log in
+/Users/tristansharma/mockapp/app/models/match.rb:17:in `block in updateMatches'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `each'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `updateMatches'
+/Users/tristansharma/mockapp/lib/tasks/match_update.rake:3:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+rake aborted!
+PG::ConnectionBad: FATAL:  role "mockapp" is not permitted to log in
+/Users/tristansharma/mockapp/app/models/match.rb:17:in `block in updateMatches'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `each'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `updateMatches'
+/Users/tristansharma/mockapp/lib/tasks/match_update.rake:3:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+rake aborted!
+PG::ConnectionBad: FATAL:  role "mockapp" is not permitted to log in
+/Users/tristansharma/mockapp/app/models/match.rb:17:in `block in updateMatches'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `each'
+/Users/tristansharma/mockapp/app/models/match.rb:16:in `updateMatches'
+/Users/tristansharma/mockapp/lib/tasks/match_update.rake:3:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+rake aborted!
+NoMethodError: undefined method `update_listings_db' for Listing (call 'Listing.connection' to establish a connection):Class
+Did you mean?  update_open_db
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+rake aborted!
+NoMethodError: undefined method `[]' for nil:NilClass
+/Users/tristansharma/mockapp/app/models/listing.rb:78:in `block (2 levels) in assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:78:in `each'
+/Users/tristansharma/mockapp/app/models/listing.rb:78:in `find'
+/Users/tristansharma/mockapp/app/models/listing.rb:78:in `block in assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:76:in `each'
+/Users/tristansharma/mockapp/app/models/listing.rb:76:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+rake aborted!
+NoMethodError: undefined method `[]' for nil:NilClass
+/Users/tristansharma/mockapp/app/models/listing.rb:78:in `block (2 levels) in assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:78:in `each'
+/Users/tristansharma/mockapp/app/models/listing.rb:78:in `find'
+/Users/tristansharma/mockapp/app/models/listing.rb:78:in `block in assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:76:in `each'
+/Users/tristansharma/mockapp/app/models/listing.rb:76:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+JSON::ParserError: 785: unexpected token at ''
+/Users/tristansharma/mockapp/app/models/listing.rb:29:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+JSON::ParserError: 785: unexpected token at ''
+/Users/tristansharma/mockapp/app/models/listing.rb:29:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+JSON::ParserError: 785: unexpected token at ''
+/Users/tristansharma/mockapp/app/models/listing.rb:29:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+JSON::ParserError: 785: unexpected token at ''
+/Users/tristansharma/mockapp/app/models/listing.rb:29:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+JSON::ParserError: 785: unexpected token at ''
+/Users/tristansharma/mockapp/app/models/listing.rb:29:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+JSON::ParserError: 785: unexpected token at ''
+/Users/tristansharma/mockapp/app/models/listing.rb:29:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+JSON::ParserError: 785: unexpected token at ''
+/Users/tristansharma/mockapp/app/models/listing.rb:29:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+JSON::ParserError: 785: unexpected token at ''
+/Users/tristansharma/mockapp/app/models/listing.rb:29:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+JSON::ParserError: 785: unexpected token at ''
+/Users/tristansharma/mockapp/app/models/listing.rb:29:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+JSON::ParserError: 785: unexpected token at ''
+/Users/tristansharma/mockapp/app/models/listing.rb:29:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+JSON::ParserError: 785: unexpected token at ''
+/Users/tristansharma/mockapp/app/models/listing.rb:29:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+JSON::ParserError: 785: unexpected token at ''
+/Users/tristansharma/mockapp/app/models/listing.rb:29:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+JSON::ParserError: 785: unexpected token at ''
+/Users/tristansharma/mockapp/app/models/listing.rb:29:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+JSON::ParserError: 785: unexpected token at ''
+/Users/tristansharma/mockapp/app/models/listing.rb:29:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+JSON::ParserError: 785: unexpected token at ''
+/Users/tristansharma/mockapp/app/models/listing.rb:29:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+JSON::ParserError: 785: unexpected token at ''
+/Users/tristansharma/mockapp/app/models/listing.rb:29:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+JSON::ParserError: 785: unexpected token at ''
+/Users/tristansharma/mockapp/app/models/listing.rb:29:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+JSON::ParserError: 785: unexpected token at ''
+/Users/tristansharma/mockapp/app/models/listing.rb:29:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+JSON::ParserError: 785: unexpected token at ''
+/Users/tristansharma/mockapp/app/models/listing.rb:29:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+JSON::ParserError: 785: unexpected token at ''
+/Users/tristansharma/mockapp/app/models/listing.rb:29:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+JSON::ParserError: 785: unexpected token at ''
+/Users/tristansharma/mockapp/app/models/listing.rb:29:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+JSON::ParserError: 785: unexpected token at ''
+/Users/tristansharma/mockapp/app/models/listing.rb:29:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+JSON::ParserError: 785: unexpected token at ''
+/Users/tristansharma/mockapp/app/models/listing.rb:29:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+JSON::ParserError: 785: unexpected token at ''
+/Users/tristansharma/mockapp/app/models/listing.rb:29:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+JSON::ParserError: 785: unexpected token at ''
+/Users/tristansharma/mockapp/app/models/listing.rb:29:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+JSON::ParserError: 785: unexpected token at ''
+/Users/tristansharma/mockapp/app/models/listing.rb:29:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+JSON::ParserError: 785: unexpected token at ''
+/Users/tristansharma/mockapp/app/models/listing.rb:29:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+JSON::ParserError: 785: unexpected token at ''
+/Users/tristansharma/mockapp/app/models/listing.rb:29:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+JSON::ParserError: 785: unexpected token at ''
+/Users/tristansharma/mockapp/app/models/listing.rb:29:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+JSON::ParserError: 785: unexpected token at ''
+/Users/tristansharma/mockapp/app/models/listing.rb:29:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+JSON::ParserError: 785: unexpected token at ''
+/Users/tristansharma/mockapp/app/models/listing.rb:29:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+JSON::ParserError: 785: unexpected token at ''
+/Users/tristansharma/mockapp/app/models/listing.rb:29:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+JSON::ParserError: 785: unexpected token at ''
+/Users/tristansharma/mockapp/app/models/listing.rb:29:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+JSON::ParserError: 785: unexpected token at ''
+/Users/tristansharma/mockapp/app/models/listing.rb:29:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+JSON::ParserError: 785: unexpected token at ''
+/Users/tristansharma/mockapp/app/models/listing.rb:29:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+JSON::ParserError: 785: unexpected token at ''
+/Users/tristansharma/mockapp/app/models/listing.rb:29:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+JSON::ParserError: 785: unexpected token at ''
+/Users/tristansharma/mockapp/app/models/listing.rb:29:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+JSON::ParserError: 785: unexpected token at ''
+/Users/tristansharma/mockapp/app/models/listing.rb:29:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+JSON::ParserError: 785: unexpected token at ''
+/Users/tristansharma/mockapp/app/models/listing.rb:29:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+JSON::ParserError: 785: unexpected token at ''
+/Users/tristansharma/mockapp/app/models/listing.rb:29:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+JSON::ParserError: 785: unexpected token at ''
+/Users/tristansharma/mockapp/app/models/listing.rb:29:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+JSON::ParserError: 785: unexpected token at ''
+/Users/tristansharma/mockapp/app/models/listing.rb:29:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+JSON::ParserError: 785: unexpected token at ''
+/Users/tristansharma/mockapp/app/models/listing.rb:29:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+JSON::ParserError: 785: unexpected token at ''
+/Users/tristansharma/mockapp/app/models/listing.rb:29:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+JSON::ParserError: 785: unexpected token at ''
+/Users/tristansharma/mockapp/app/models/listing.rb:29:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+JSON::ParserError: 785: unexpected token at ''
+/Users/tristansharma/mockapp/app/models/listing.rb:29:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+JSON::ParserError: 785: unexpected token at ''
+/Users/tristansharma/mockapp/app/models/listing.rb:29:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+JSON::ParserError: 785: unexpected token at ''
+/Users/tristansharma/mockapp/app/models/listing.rb:29:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+JSON::ParserError: 785: unexpected token at ''
+/Users/tristansharma/mockapp/app/models/listing.rb:29:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+JSON::ParserError: 785: unexpected token at ''
+/Users/tristansharma/mockapp/app/models/listing.rb:29:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+JSON::ParserError: 785: unexpected token at ''
+/Users/tristansharma/mockapp/app/models/listing.rb:29:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+JSON::ParserError: 785: unexpected token at ''
+/Users/tristansharma/mockapp/app/models/listing.rb:29:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+JSON::ParserError: 785: unexpected token at ''
+/Users/tristansharma/mockapp/app/models/listing.rb:29:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+JSON::ParserError: 785: unexpected token at ''
+/Users/tristansharma/mockapp/app/models/listing.rb:29:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+JSON::ParserError: 785: unexpected token at ''
+/Users/tristansharma/mockapp/app/models/listing.rb:29:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+JSON::ParserError: 785: unexpected token at ''
+/Users/tristansharma/mockapp/app/models/listing.rb:29:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+JSON::ParserError: 785: unexpected token at ''
+/Users/tristansharma/mockapp/app/models/listing.rb:29:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+JSON::ParserError: 785: unexpected token at ''
+/Users/tristansharma/mockapp/app/models/listing.rb:29:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+JSON::ParserError: 785: unexpected token at ''
+/Users/tristansharma/mockapp/app/models/listing.rb:29:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+JSON::ParserError: 785: unexpected token at ''
+/Users/tristansharma/mockapp/app/models/listing.rb:29:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+JSON::ParserError: 785: unexpected token at ''
+/Users/tristansharma/mockapp/app/models/listing.rb:29:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+JSON::ParserError: 785: unexpected token at ''
+/Users/tristansharma/mockapp/app/models/listing.rb:29:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+JSON::ParserError: 785: unexpected token at ''
+/Users/tristansharma/mockapp/app/models/listing.rb:29:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+JSON::ParserError: 785: unexpected token at ''
+/Users/tristansharma/mockapp/app/models/listing.rb:29:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+JSON::ParserError: 785: unexpected token at ''
+/Users/tristansharma/mockapp/app/models/listing.rb:29:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+JSON::ParserError: 785: unexpected token at ''
+/Users/tristansharma/mockapp/app/models/listing.rb:29:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+JSON::ParserError: 785: unexpected token at ''
+/Users/tristansharma/mockapp/app/models/listing.rb:29:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+JSON::ParserError: 785: unexpected token at ''
+/Users/tristansharma/mockapp/app/models/listing.rb:29:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+JSON::ParserError: 785: unexpected token at ''
+/Users/tristansharma/mockapp/app/models/listing.rb:29:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+JSON::ParserError: 785: unexpected token at ''
+/Users/tristansharma/mockapp/app/models/listing.rb:29:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+JSON::ParserError: 785: unexpected token at ''
+/Users/tristansharma/mockapp/app/models/listing.rb:29:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+JSON::ParserError: 785: unexpected token at ''
+/Users/tristansharma/mockapp/app/models/listing.rb:29:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+JSON::ParserError: 785: unexpected token at ''
+/Users/tristansharma/mockapp/app/models/listing.rb:29:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+JSON::ParserError: 785: unexpected token at ''
+/Users/tristansharma/mockapp/app/models/listing.rb:29:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+JSON::ParserError: 785: unexpected token at ''
+/Users/tristansharma/mockapp/app/models/listing.rb:29:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+JSON::ParserError: 785: unexpected token at ''
+/Users/tristansharma/mockapp/app/models/listing.rb:29:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+JSON::ParserError: 785: unexpected token at ''
+/Users/tristansharma/mockapp/app/models/listing.rb:29:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+JSON::ParserError: 785: unexpected token at ''
+/Users/tristansharma/mockapp/app/models/listing.rb:29:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+JSON::ParserError: 785: unexpected token at ''
+/Users/tristansharma/mockapp/app/models/listing.rb:29:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+JSON::ParserError: 785: unexpected token at ''
+/Users/tristansharma/mockapp/app/models/listing.rb:29:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+JSON::ParserError: 785: unexpected token at ''
+/Users/tristansharma/mockapp/app/models/listing.rb:29:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+JSON::ParserError: 785: unexpected token at ''
+/Users/tristansharma/mockapp/app/models/listing.rb:29:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+JSON::ParserError: 785: unexpected token at ''
+/Users/tristansharma/mockapp/app/models/listing.rb:29:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+Errno::ECONNREFUSED: Failed to open TCP connection to localhost:8080 (Connection refused - connect(2) for "localhost" port 8080)
+/Users/tristansharma/mockapp/app/models/listing.rb:27:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+
+Caused by:
+Errno::ECONNREFUSED: Connection refused - connect(2) for "localhost" port 8080
+/Users/tristansharma/mockapp/app/models/listing.rb:27:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+Errno::ECONNREFUSED: Failed to open TCP connection to localhost:8080 (Connection refused - connect(2) for "localhost" port 8080)
+/Users/tristansharma/mockapp/app/models/listing.rb:27:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+
+Caused by:
+Errno::ECONNREFUSED: Connection refused - connect(2) for "localhost" port 8080
+/Users/tristansharma/mockapp/app/models/listing.rb:27:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+Errno::ECONNREFUSED: Failed to open TCP connection to localhost:8080 (Connection refused - connect(2) for "localhost" port 8080)
+/Users/tristansharma/mockapp/app/models/listing.rb:27:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+
+Caused by:
+Errno::ECONNREFUSED: Connection refused - connect(2) for "localhost" port 8080
+/Users/tristansharma/mockapp/app/models/listing.rb:27:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+Errno::ECONNREFUSED: Failed to open TCP connection to localhost:8080 (Connection refused - connect(2) for "localhost" port 8080)
+/Users/tristansharma/mockapp/app/models/listing.rb:27:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+
+Caused by:
+Errno::ECONNREFUSED: Connection refused - connect(2) for "localhost" port 8080
+/Users/tristansharma/mockapp/app/models/listing.rb:27:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+Errno::ECONNREFUSED: Failed to open TCP connection to localhost:8080 (Connection refused - connect(2) for "localhost" port 8080)
+/Users/tristansharma/mockapp/app/models/listing.rb:27:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+
+Caused by:
+Errno::ECONNREFUSED: Connection refused - connect(2) for "localhost" port 8080
+/Users/tristansharma/mockapp/app/models/listing.rb:27:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+Errno::ECONNREFUSED: Failed to open TCP connection to localhost:8080 (Connection refused - connect(2) for "localhost" port 8080)
+/Users/tristansharma/mockapp/app/models/listing.rb:27:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+
+Caused by:
+Errno::ECONNREFUSED: Connection refused - connect(2) for "localhost" port 8080
+/Users/tristansharma/mockapp/app/models/listing.rb:27:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+Errno::ECONNREFUSED: Failed to open TCP connection to localhost:8080 (Connection refused - connect(2) for "localhost" port 8080)
+/Users/tristansharma/mockapp/app/models/listing.rb:27:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+
+Caused by:
+Errno::ECONNREFUSED: Connection refused - connect(2) for "localhost" port 8080
+/Users/tristansharma/mockapp/app/models/listing.rb:27:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+Errno::ECONNREFUSED: Failed to open TCP connection to localhost:8080 (Connection refused - connect(2) for "localhost" port 8080)
+/Users/tristansharma/mockapp/app/models/listing.rb:27:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+
+Caused by:
+Errno::ECONNREFUSED: Connection refused - connect(2) for "localhost" port 8080
+/Users/tristansharma/mockapp/app/models/listing.rb:27:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+Errno::ECONNREFUSED: Failed to open TCP connection to localhost:8080 (Connection refused - connect(2) for "localhost" port 8080)
+/Users/tristansharma/mockapp/app/models/listing.rb:27:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+
+Caused by:
+Errno::ECONNREFUSED: Connection refused - connect(2) for "localhost" port 8080
+/Users/tristansharma/mockapp/app/models/listing.rb:27:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+Errno::ECONNREFUSED: Failed to open TCP connection to localhost:8080 (Connection refused - connect(2) for "localhost" port 8080)
+/Users/tristansharma/mockapp/app/models/listing.rb:27:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+
+Caused by:
+Errno::ECONNREFUSED: Connection refused - connect(2) for "localhost" port 8080
+/Users/tristansharma/mockapp/app/models/listing.rb:27:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+Errno::ECONNREFUSED: Failed to open TCP connection to localhost:8080 (Connection refused - connect(2) for "localhost" port 8080)
+/Users/tristansharma/mockapp/app/models/listing.rb:27:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+
+Caused by:
+Errno::ECONNREFUSED: Connection refused - connect(2) for "localhost" port 8080
+/Users/tristansharma/mockapp/app/models/listing.rb:27:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+Errno::ECONNREFUSED: Failed to open TCP connection to localhost:8080 (Connection refused - connect(2) for "localhost" port 8080)
+/Users/tristansharma/mockapp/app/models/listing.rb:27:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+
+Caused by:
+Errno::ECONNREFUSED: Connection refused - connect(2) for "localhost" port 8080
+/Users/tristansharma/mockapp/app/models/listing.rb:27:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+Errno::ECONNREFUSED: Failed to open TCP connection to localhost:8080 (Connection refused - connect(2) for "localhost" port 8080)
+/Users/tristansharma/mockapp/app/models/listing.rb:27:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+
+Caused by:
+Errno::ECONNREFUSED: Connection refused - connect(2) for "localhost" port 8080
+/Users/tristansharma/mockapp/app/models/listing.rb:27:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+Errno::ECONNREFUSED: Failed to open TCP connection to localhost:8080 (Connection refused - connect(2) for "localhost" port 8080)
+/Users/tristansharma/mockapp/app/models/listing.rb:27:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+
+Caused by:
+Errno::ECONNREFUSED: Connection refused - connect(2) for "localhost" port 8080
+/Users/tristansharma/mockapp/app/models/listing.rb:27:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+Errno::ECONNREFUSED: Failed to open TCP connection to localhost:8080 (Connection refused - connect(2) for "localhost" port 8080)
+/Users/tristansharma/mockapp/app/models/listing.rb:27:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+
+Caused by:
+Errno::ECONNREFUSED: Connection refused - connect(2) for "localhost" port 8080
+/Users/tristansharma/mockapp/app/models/listing.rb:27:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+Errno::ECONNREFUSED: Failed to open TCP connection to localhost:8080 (Connection refused - connect(2) for "localhost" port 8080)
+/Users/tristansharma/mockapp/app/models/listing.rb:27:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+
+Caused by:
+Errno::ECONNREFUSED: Connection refused - connect(2) for "localhost" port 8080
+/Users/tristansharma/mockapp/app/models/listing.rb:27:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+Errno::ECONNREFUSED: Failed to open TCP connection to localhost:8080 (Connection refused - connect(2) for "localhost" port 8080)
+/Users/tristansharma/mockapp/app/models/listing.rb:27:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+
+Caused by:
+Errno::ECONNREFUSED: Connection refused - connect(2) for "localhost" port 8080
+/Users/tristansharma/mockapp/app/models/listing.rb:27:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+Errno::ECONNREFUSED: Failed to open TCP connection to localhost:8080 (Connection refused - connect(2) for "localhost" port 8080)
+/Users/tristansharma/mockapp/app/models/listing.rb:27:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+
+Caused by:
+Errno::ECONNREFUSED: Connection refused - connect(2) for "localhost" port 8080
+/Users/tristansharma/mockapp/app/models/listing.rb:27:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+Errno::ECONNREFUSED: Failed to open TCP connection to localhost:8080 (Connection refused - connect(2) for "localhost" port 8080)
+/Users/tristansharma/mockapp/app/models/listing.rb:27:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+
+Caused by:
+Errno::ECONNREFUSED: Connection refused - connect(2) for "localhost" port 8080
+/Users/tristansharma/mockapp/app/models/listing.rb:27:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+Errno::ECONNREFUSED: Failed to open TCP connection to localhost:8080 (Connection refused - connect(2) for "localhost" port 8080)
+/Users/tristansharma/mockapp/app/models/listing.rb:27:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+
+Caused by:
+Errno::ECONNREFUSED: Connection refused - connect(2) for "localhost" port 8080
+/Users/tristansharma/mockapp/app/models/listing.rb:27:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+Errno::ECONNREFUSED: Failed to open TCP connection to localhost:8080 (Connection refused - connect(2) for "localhost" port 8080)
+/Users/tristansharma/mockapp/app/models/listing.rb:27:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+
+Caused by:
+Errno::ECONNREFUSED: Connection refused - connect(2) for "localhost" port 8080
+/Users/tristansharma/mockapp/app/models/listing.rb:27:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+Errno::ECONNREFUSED: Failed to open TCP connection to localhost:8080 (Connection refused - connect(2) for "localhost" port 8080)
+/Users/tristansharma/mockapp/app/models/listing.rb:27:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+
+Caused by:
+Errno::ECONNREFUSED: Connection refused - connect(2) for "localhost" port 8080
+/Users/tristansharma/mockapp/app/models/listing.rb:27:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+Errno::ECONNREFUSED: Failed to open TCP connection to localhost:8080 (Connection refused - connect(2) for "localhost" port 8080)
+/Users/tristansharma/mockapp/app/models/listing.rb:27:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+
+Caused by:
+Errno::ECONNREFUSED: Connection refused - connect(2) for "localhost" port 8080
+/Users/tristansharma/mockapp/app/models/listing.rb:27:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+Errno::ECONNREFUSED: Failed to open TCP connection to localhost:8080 (Connection refused - connect(2) for "localhost" port 8080)
+/Users/tristansharma/mockapp/app/models/listing.rb:27:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+
+Caused by:
+Errno::ECONNREFUSED: Connection refused - connect(2) for "localhost" port 8080
+/Users/tristansharma/mockapp/app/models/listing.rb:27:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)
+warning ../package.json: No license field
+[Simple Form] Simple Form is not configured in the application and will use the default values. Use `rails generate simple_form:install` to generate the Simple Form configuration.
+rake aborted!
+Errno::ECONNREFUSED: Failed to open TCP connection to localhost:8080 (Connection refused - connect(2) for "localhost" port 8080)
+/Users/tristansharma/mockapp/app/models/listing.rb:27:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+
+Caused by:
+Errno::ECONNREFUSED: Connection refused - connect(2) for "localhost" port 8080
+/Users/tristansharma/mockapp/app/models/listing.rb:27:in `address_code'
+/Users/tristansharma/mockapp/app/models/listing.rb:73:in `assign_codes'
+/Users/tristansharma/mockapp/app/models/listing.rb:90:in `update_listings_db'
+/Users/tristansharma/mockapp/lib/tasks/update_listings.rake:2:in `block in <main>'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `load'
+/Users/tristansharma/.rbenv/versions/2.6.3/bin/bundle:23:in `<main>'
+Tasks: TOP => update_matches
+(See full trace by running task with --trace)

@@ -1,0 +1,620 @@
+<head>
+  <title>Matches</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <style>
+    .timeline {
+      margin-top: 10px;
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      text-align: center;
+      justify-content: center;
+    }
+
+    .timeline li {
+      transition: all 200ms ease-in;
+    }
+
+    .timestamp {
+      margin-bottom: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-weight: 100;
+    }
+
+    .status {
+      display: flex;
+      justify-content: center;
+      border-top: 4px solid #2980b9;
+      position: relative;
+      transition: all 200ms ease-in;
+    }
+
+    .status span {
+      padding-top: 20px;
+      width: 100%;
+    }
+
+    .status span:before {
+      content: '';
+      width: 20px;
+      height: 20px;
+      background-color: #e8eeff;
+      border-radius: 25px;
+      border: 4px solid #2980b9;
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      margin-left: -10px;
+      transition: all 200ms ease-in;
+    }
+
+    .carousel-caption {
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      padding-top: 5px;
+    }
+
+    .carousel-caption a {
+      color: #2980b9 !important;
+    }
+
+    .carousel-control-left {
+      margin-right: 15px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
+
+    .carousel-control-right {
+      margin-left: 15px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
+
+    .carousel-control-left a, .carousel-control-right a {
+      height: 100%;
+      text-decoration: none;
+      font-size: 25px;
+      margin-top: 45px;
+    }
+
+    .carousel-caption a {
+      flex: 1;
+      text-decoration: none;
+    }
+
+    .carousel-item {
+      overflow: hidden;
+    }
+
+    .carousel-item img {
+      overflow: hidden;
+    }
+
+    #carouselExampleControls {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #carouselExampleControls a {
+      color: #2980b9 !important;
+    }
+
+    .timeline-item.noMatches .timestamp, .timeline-item.noMatches .status {
+      /*color: gray !important;*/
+      /*border-color: #bed8ea;*/
+      opacity: 0.8;
+    }
+
+    .timeline-item.noMatches .status span:before {
+      /*border-color: gray;*/
+    }
+
+    .timeline-item.selected .status span:before {
+      background-color: #206a91 !important;;
+    }
+
+    .timeline-item:hover {
+      color: #2980b9 !important;
+      filter: contrast(1.5);
+    }
+
+    .carousel-caption {
+      position: static;
+      color: black;
+    }
+
+    .slider-container {
+      max-width: 868px;
+      margin-bottom: 0px;
+      margin-top: 30px;
+    }
+
+    #weeks-dropdown {
+      max-width: 200px;
+      text-align-last: center;
+    }
+
+    #weeks-dropdown option {
+      text-align: center;
+    }
+
+    #previous-week-switcher.week-switcher-disabled, #next-week-switcher.week-switcher-disabled {
+      cursor: not-allowed !important;
+    }
+
+    #previous-week-switcher:hover:not(.week-switcher-disabled) {
+      filter: contrast(2);
+    }
+
+    #next-week-switcher:hover:not(.week-switcher-disabled) {
+      filter: contrast(2);
+    }
+
+    a#slider-previous-nav {
+      transition: border-color .3s;
+      border-width: 2px;
+      border-radius: 50%;
+      border-color: #dfdfdf;
+      border-style: solid;
+      height: 34px;
+      width: 34px;
+      color: transparent !important;
+      position: relative;
+    }
+
+    #slider-previous-nav::after {
+      content: '';
+      position: absolute;
+      height: 16px;
+      width: 16px;
+      top: 50%;
+      left: 48%;
+      -webkit-transform: translateX(-50%) translateY(-50%) rotate(180deg);
+      -ms-transform: translateX(-50%) translateY(-50%) rotate(180deg);
+      transform: translateX(-50%) translateY(-50%) rotate(180deg);
+      background: url(cd-arrow.svg) no-repeat 0 0;
+    }
+
+
+    a#slider-next-nav {
+      transition: border-color .3s;
+      border-width: 2px;
+      border-radius: 50%;
+      border-color: #dfdfdf;
+      border-style: solid;
+      height: 34px;
+      width: 34px;
+      color: transparent !important;
+      position: relative;
+    }
+
+    #slider-next-nav::after {
+      content: '';
+      position: absolute;
+      height: 16px;
+      width: 16px;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translateX(-50%) translateY(-50%);
+      -ms-transform: translateX(-50%) translateY(-50%);
+      transform: translateX(-50%) translateY(-50%);
+      background: url(cd-arrow.svg) no-repeat 0 0;
+    }
+
+    a#slider-next-nav:hover, a#slider-previous-nav:hover {
+      border-color: #2980b9;
+    }
+
+    #inputGroupSelect01 {
+      background-color: #f3f3f2;
+      color: black;
+      border: 0;
+    }
+
+    .carousel-inner {
+      padding-top: 5px;
+      max-width: 691px;
+    }
+
+    h4#week-header-text-bg, h4#week-header-text {
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+    }
+
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet"/>
+  <%= stylesheet_link_tag "ui" %>
+</head>
+<body>
+<% if user_signed_in? %>
+
+  <% previous_month_index = params[:cm].to_i - 1 %>
+  <% next_month_index = params[:cm].to_i + 1 %>
+  <% cm_mappings = {} %>
+  <% page_num_mappings = {} %>
+
+  <div class="container">
+    <div class="container slider-container">
+      <div class="row">
+        <div id="carouselExampleControls" class="slide carousel" data-wrap="false" data-interval="false">
+          <div class="carousel-control-left">
+            <a class="" href="#carouselExampleControls" role="button" data-slide="prev" id="slider-previous-nav">
+              Prev
+              <span class="sr-only">Previous</span>
+            </a>
+          </div>
+          <div class="carousel-inner">
+            <div class="container" id="weeks-dropdown">
+              <div class="input-group mb-3">
+                <select class="custom-select" id="inputGroupSelect01" onchange="onMonthSelectionChange()">
+                  <% @months.each_with_index do |(key, month), index| %>
+                    <option value="<%= index %>"
+                            <% if index === params[:cm].to_i %>selected
+                            <% end %>><%= month[:month_name] %></option>
+                  <% end %>
+                </select>
+              </div>
+            </div>
+            <% class_activated = false %>
+            <% @months.each_with_index do |(key, month), month_index| %>
+              <% css_class = "" %>
+              <% if month_index == @current_month_slide %>
+                <% unless class_activated %>
+                  <% css_class = "active" %>
+                  <% class_activated = true %>
+                <% end %>
+              <% end %>
+              <div class="carousel-item <%= css_class %>">
+                <div class="timeline">
+                  <div class="carousel-caption">
+                    <% current_month_weeks_len = month[:weeks].length %>
+                    <% month[:weeks].each_with_index do |w, week_index| %>
+                      <% encoded_month_id = Base64.strict_encode64(w[:page_num].to_s) %>
+                      <% unless cm_mappings[encoded_month_id] %>
+                        <% cm_mappings[encoded_month_id] = {previous_cm: month_index, next_cm: month_index} %>
+                      <% end %>
+                      <% cm_mappings[encoded_month_id][:previous_cm] = week_index === 0 ? month_index - 1 : month_index %>
+                      <% cm_mappings[encoded_month_id][:next_cm] = week_index === current_month_weeks_len - 1 ? month_index + 1 : month_index %>
+                      <% week = w[:week_obj] %>
+                      <% page_num_mappings[w[:page_num]] = {prev: w[:prev], next: w[:next]} %>
+                      <% week_has_matches = @weeks[w[:week_key]][:has_matches] %>
+                      <% has_matches_css_class = week_has_matches ? "hasMatches" : "noMatches" %>
+                      <% selected_css_class = w[:page_num] === @pagy.page ? "selected" : "" %>
+                      <% if selected_css_class == "selected" %>
+                      <% end %>
+                      <% if selected_css_class != "selected" && w[:real_page_num] %>
+                        <% selected_css_class = w[:real_page_num] === @pagy.page ? "selected" : "" %>
+                      <% end %>
+                      <% if selected_css_class != "selected" && w[:dupl_page_num] %>
+                        <% selected_css_class = w[:dupl_page_num] === @pagy.page ? "selected" : "" %>
+                      <% end %>
+                      <%= link_to("?puid=#{encoded_month_id}&cm=#{month_index}", :class => "timeline-item #{has_matches_css_class} #{selected_css_class} ") do %>
+                        <div class="timestamp">
+                          <span class="date">Week <%= w[:week_number] %></span>
+                        </div>
+                        <div class="status">
+                            <span>
+                              <%= week.first.strftime("%b %-d") %> - <%= week.last.strftime("%b %-d") %>
+                            </span>
+                        </div>
+                      <% end %>
+                    <% end %>
+                  </div>
+                </div>
+              </div>
+            <% end %>
+          </div>
+          <div class="carousel-control-right">
+            <a class="" href="#carouselExampleControls" role="button" data-slide="next" id="slider-next-nav">
+              Next
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <% if cm_mappings[params[:puid]] %>
+
+      <% previous_month_index = cm_mappings[params[:puid]][:previous_cm] %>
+      <% next_month_index = cm_mappings[params[:puid]][:next_cm] %>
+      <div id="app">
+        <% run_week_header = true %>
+
+        <% if run_week_header %>
+        <% end %>
+        <% run_week_header = false %>
+
+        <% @addresses.each do |a| %>
+          <% run_once = true %>
+          <% a.each do |b| %>
+            <% if run_once %>
+              <% if a %>
+                <div class="row">
+                  <div id="week-header">
+                    <% if @pagy.prev.nil? %>
+                      <a id="previous-week-switcher" class="week-switcher-disabled">
+                    <% else %>
+                      <% number_mapping = page_num_mappings[@pagy.page.to_i] %>
+                      <% prev_page_num = @pagy.prev %>
+                      <% if number_mapping %>
+                        <% prev_page_num = number_mapping[:prev] %>
+                        <% if prev_page_num < 1 %>
+                          <% prev_page_num = 1 %>
+                        <% end %>
+                      <% end %>
+                      <a id="previous-week-switcher" href='<%= "/?puid=#{Base64.strict_encode64(prev_page_num.to_s)}&cm=#{previous_month_index}" %>'>
+                    <% end %>
+                    <i class="far fa-caret-square-left header-left-arrow"></i>
+                    <span class="week-switcher-text">Previous Week</span>
+                    </a>
+                    <% if (b["date"].all_week.first.strftime("%A, %B %-d, %Y") + " - " + b["date"].all_week.last.strftime("%A, %B %-d, %Y")).length > 51 %>
+                      <h4 id="week-header-text-bg">
+                        <%= b["date"].all_week.first.strftime("%A, %B %-d, %Y") + " - " + ((b["date"]).all_week.last).strftime("%A, %B %-d, %Y") %>
+                      </h4>
+                    <% else %>
+                      <h4 id="week-header-text"><%= b["date"].all_week.first.strftime("%A, %B %-d, %Y") + " - " + ((b["date"]).all_week.last).strftime("%A, %B %-d, %Y") %></h4>
+                    <% end %>
+                    <% if (@weeks[b["key"]] and @weeks[b["key"]][:is_last_match_week]) %>
+                      <a id="next-week-switcher" class="week-switcher-disabled">
+                        <span class="week-switcher-text">Next Week</span>
+                        <i class="far fa-caret-square-right header-right-arrow"></i>
+                      </a>
+                    <% else %>
+                      <% number_mapping = page_num_mappings[@pagy.page.to_i] %>
+                      <% next_page_num = @pagy.next %>
+                      <% if number_mapping %>
+                        <% next_page_num = number_mapping[:next] %>
+                      <% end %>
+                      <a id="next-week-switcher" href='<%= "/?puid=#{Base64.strict_encode64(next_page_num.to_s)}&cm=#{next_month_index}" %>'>
+                        <span class="week-switcher-text">Next Week</span>
+                        <i class="far fa-caret-square-right header-right-arrow"></i>
+                      </a>
+                    <% end %>
+                    </a>
+                  </div>
+                </div>
+              <% end %>
+              <% run_once = false %>
+            <% end %>
+            <% if b["addresses"].length == 0 %>
+              <div class="row day-section-item day-section-item-disabled">
+                <div class="col-12">
+                  <div class="accordion">
+                    <div class="card">
+                      <div class="card-header">
+                        <h2 class="mb-0">
+                          <%= b["date"].strftime("%A, %B %-d, %Y") %>
+                        </h2>
+                        <i class="day-section-accordion-arrow fas fa-chevron-up day-section-arrow-rotate"></i>
+                      </div>
+                      <div class="collapse">
+                        <div class="card-body"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <% else %>
+              <div class="row day-section-item">
+                <div class="col-12">
+                  <div class="accordion">
+                    <div class="card">
+                      <div class="card-header">
+                        <h2 class="mb-0">
+                          <%= b["date"].strftime("%A, %B %-d, %Y") %>
+                        </h2>
+                        <i class="day-section-accordion-arrow fas fa-chevron-right"></i>
+                      </div>
+                      <div class="collapse">
+                        <div class="card-body">
+                          <% b["addresses"].each do |c| %>
+                            <!-- Individual Task / Item -->
+                            <div class="day-section-item-row row" data-date="<%= b['date'] %>" data-address="<%= c.keys[0] %>">
+                              <div class="col-6">
+                                        <span class="day-section-item-row-text">
+                                          <a target="_blank" href="http://www.dd.com/<%= c["#{c.keys[0]}"][1] %>" class="match-link">
+                                            <%= c.keys[0] %>
+                                          </a>
+                                        </span>
+                              </div>
+                              <div class="col-6">
+                                <div class="day-section-item-row-labels-container">
+                                  <% if c["#{c.keys[0]}"][0] == 0 %>
+                                    <span data-id=<%= c.keys[0] %> data-badge-type="unviewed" class="badge badge-secondary day-section-item-badge-unviewed-active">Unviewed</span>
+                                  <% else %>
+                                    <span data-id=<%= c.keys[0] %> data-badge-type="unviewed" class="badge badge-secondary day-section-item-badge-unviewed">Unviewed</span>
+                                  <% end %>
+                                  <% if c["#{c.keys[0]}"][0] == 1 %>
+                                    <span data-id=<%= c.keys[0] %> data-badge-type="viewed" class="badge badge-secondary day-section-item-badge-viewed-active">Viewed</span>
+                                  <% else %>
+                                    <span data-id=<%= c.keys[0] %> data-badge-type="viewed" class="badge badge-secondary day-section-item-badge-viewed">Viewed</span>
+                                  <% end %>
+                                  <% if c["#{c.keys[0]}"][0] == 2 %>
+                                    <span data-id=<%= c.keys[0] %> data-badge-type="contacted" class="badge badge-secondary day-section-item-badge-contacted-active">Contacted</span>
+                                  <% else %>
+                                    <span data-id=<%= c.keys[0] %> data-badge-type="contacted" class="badge badge-secondary day-section-item-badge-contacted">Contacted</span>
+                                  <% end %>
+                                  <% if c["#{c.keys[0]}"][0] == 3 %>
+                                    <span data-id=<%= c.keys[0] %> data-badge-type="converted" class="badge badge-secondary day-section-item-badge-converted-active">Converted</span>
+                                  <% else %>
+                                    <span data-id=<%= c.keys[0] %>data-badge-type="converted" class="badge badge-secondary day-section-item-badge-converted">Converted</span>
+                                  <% end %>
+                                </div>
+                              </div>
+                            </div>
+                          <% end %>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <% end %>
+          <% end %>
+        <% end %>
+      </div>
+
+    <% end %>
+
+  </div>
+<% else %>
+  <% controller.redirect_to sign_in_path %>
+<% end %>
+<script data-turbolinks-eval="false">
+    var labelClasses = {
+        Unviewed: "day-section-item-badge-unviewed",
+        Viewed: "day-section-item-badge-viewed",
+        Contacted: "day-section-item-badge-contacted",
+        Converted: "day-section-item-badge-converted"
+    };
+
+    function attachAccordionClickListeners() {
+        $(".card-header").on("click", function (e) {
+            if (
+                $(e.currentTarget)
+                    .closest(".day-section-item")
+                    .hasClass("day-section-item-disabled")
+            ) {
+                return;
+            }
+            let collapse = $(this)
+                .siblings(".collapse")
+                .first();
+            if (collapse) {
+                if (collapse.hasClass("show")) {
+                    // Hide
+                    collapse.collapse("hide");
+                    $(this)
+                        .children(".day-section-accordion-arrow")
+                        .first()
+                        .removeClass("fa-rotate-90");
+                } else {
+                    // Show
+                    collapse.collapse("show");
+                    $(this)
+                        .children(".day-section-accordion-arrow")
+                        .first()
+                        .addClass("fa-rotate-90");
+                }
+            }
+        });
+    }
+
+    function attachLabelClickListener() {
+        $(".badge").on("click", function (e) {
+            e.preventDefault();
+            let label = e.currentTarget.innerText;
+            let address = $(this).closest(".day-section-item-row");
+            let addressData = address.data();
+            $(e.currentTarget)
+                .removeClass(labelClasses[label])
+                .addClass(labelClasses[label] + "-active");
+            let siblings = $(e.currentTarget).siblings(".badge");
+            $.ajax({
+                method: "POST",
+                url: "<%= update_match_status_path %>",
+                headers: {"X-CSRF-Token": document.getElementsByName('csrf-token')[0].content},
+                data: {
+                    new_status: label.toLowerCase(),
+                    date: addressData.date,
+                    address: addressData.address
+                }
+            }).done(function () {
+                for (var i = 0; i < siblings.length; i++) {
+                    let sibling = $(siblings[i]);
+                    let defaultClass = labelClasses[sibling.text()];
+                    let activeClass = `${defaultClass}-active`;
+                    if (sibling.hasClass(activeClass)) {
+                        sibling.removeClass(activeClass);
+                        sibling.addClass(defaultClass);
+                    }
+                }
+            });
+        });
+    }
+
+    function attachLinkClickListener() {
+        $("a.match-link").on("click", function (e) {
+            e.preventDefault();
+            let el = $(this);
+            let matchElem = el.closest(".day-section-item-row");
+            let addressData = matchElem.data();
+            $.ajax({
+                method: "POST",
+                url: "<%= mark_link_viewed_url %>",
+                headers: {"X-CSRF-Token": document.getElementsByName('csrf-token')[0].content},
+                data: {
+                    date: addressData.date,
+                    address: addressData.address
+                }
+            }).done(function (res) {
+                if (res.status_updated) {
+                    let badges = matchElem.find(".badge");
+                    for (var i = 0; i < badges.length; i++) {
+                        let badge = $(badges[i]);
+                        let defaultClass = labelClasses[badge.text()];
+                        let activeClass = `${defaultClass}-active`;
+                        if (badge.hasClass(activeClass)) {
+                            badge.removeClass(activeClass);
+                            badge.addClass(defaultClass);
+                        }
+                        if (badge.text() === "Viewed") {
+                            badge.removeClass(defaultClass);
+                            badge.addClass(activeClass);
+                        }
+                    }
+                }
+                window.open(el.attr("href"), "_blank");
+            });
+        });
+    }
+
+    function carouselInitializer() {
+        window.monthsCarousel = $('#carouselExampleControls').carousel({
+            interval: false
+        });
+        window.monthsCarousel.on('slide.bs.carousel', function (e) {
+            window.currentSlide = e.to;
+            document.getElementById('inputGroupSelect01').selectedIndex = e.to;
+        });
+    }
+
+
+    if (!window.documentReadyHandler) {
+        window.documentReadyHandler = function () {
+            attachAccordionClickListeners();
+            attachLabelClickListener();
+            attachLinkClickListener();
+            carouselInitializer();
+        };
+    }
+
+    $(document).on("turbolinks:load", function () {
+        window.documentReadyHandler();
+    });
+
+    function onMonthSelectionChange() {
+        let el = $("#inputGroupSelect01").val();
+        el = parseInt(el);
+        window.monthsCarousel.carousel(el);
+    }
+</script>
+<script>
+    $(document).on("turbolinks:load", function () {
+        // attachLinkClickListener();
+    });
+</script>
+</body>
