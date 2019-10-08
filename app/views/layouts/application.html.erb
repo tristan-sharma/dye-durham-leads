@@ -39,13 +39,17 @@
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <% if current_user.admin? %>
+
     <ul class="navbar-nav mr-auto">
+      <% if user_signed_in? %>
+      <% if current_user.admin? %>
       <li class="nav-item active">
         <div class="nav-link"><span class="sr-only">(current)</span><%= link_to 'Invite Users', new_user_invitation_path, class: "nav-link" %></div>
       </li>
-    </ul>
     <% end %>
+    <% end %>
+    </ul>
+
     <div class="form-inline my-2 my-lg-0">
       <% if user_signed_in? %>
         <ul class="navbar-nav">
