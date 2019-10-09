@@ -7,13 +7,13 @@ This app uses machine learning technologies developed by ThinkData Works to prov
 
 ## Installing
 
-1.  Clone the repository.
+1.  Clone the repository:
 
     ```
     git clone https://github.com/tristan-sharma/dye-durham-leads.git
     ```
    
-2. Setup the database.
+2. Setup the database:
 
     ```
     bin/rake db:setup
@@ -21,10 +21,23 @@ This app uses machine learning technologies developed by ThinkData Works to prov
     
 ## Development
 
-Run the development server with default configuration on http://localhost:3000
+Run the development server with default configuration on http://localhost:3000:
 
-    ```
     bin/rails s
-    ```
+    
+### Rake Tasks and Cronjobs
 
+Cronjobs are run every 24h using the `whenever` gem to retrieve the addresses of real estate listings from the Namara data-feeds and to check for address matches on the client dataset.
 
+Bring the latest home addresses on the market from Namara into the `Listings` table:
+
+    
+    rake update_listings
+    
+
+Add the addresses of homes that are on both the client dataset and on the market to the `Matches` table:
+
+    
+    rake update_matches
+    
+   
