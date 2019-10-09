@@ -1,7 +1,29 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+Match.create!([
+  {address: "176 Haddington Ave Toronto ON M5M 2P8", code: "khfjh5u59tbkj", dd_key: "7", matched_on: "2019-08-10", week_matched: 32, viewed: nil, year_matched: 2019},
+  {address: "785 Brown's Line 604, Toronto, ON, M8W3V8", code: "J22BLGY4", dd_key: "10", matched_on: "2019-08-08", week_matched: 32, viewed: nil, year_matched: 2019},
+  {address: "78 WICKSON TR, Toronto, ON, M1B1P3", code: "U7XCQG7Q", dd_key: "9", matched_on: "2019-08-08", week_matched: 32, viewed: nil, year_matched: 2019},
+  {address: "12 HIBBERTS DR, Toronto, ON, M1K1T9", code: "SZ8UMTJX", dd_key: "8", matched_on: "2019-08-07", week_matched: 32, viewed: nil, year_matched: 2019},
+  {address: "15 THIRTY EIGHTH ST, Toronto, ON, M8W3M1", code: "SWS5F395", dd_key: "7", matched_on: "2019-08-07", week_matched: 32, viewed: nil, year_matched: 2019},
+  {address: "234 Willow Ave Toronto ON M4E 3K7", code: "J97WWYFF", dd_key: "6", matched_on: "2019-08-07", week_matched: 32, viewed: nil, year_matched: 2019},
+  {address: "30 Rollingwood Dr, Toronto, ON, M2H2M5", code: "7NKRTWQV", dd_key: "13", matched_on: "2019-08-01", week_matched: 31, viewed: nil, year_matched: 2019},
+  {address: "39 Brant St, Toronto, ON", code: "JE8KWCLF", dd_key: "12", matched_on: "2019-08-01", week_matched: 31, viewed: nil, year_matched: 2019},
+  {address: "38 DEMARIS AVE, Toronto, ON, M3N1M1", code: "GYCV3WW4", dd_key: "11", matched_on: "2019-08-01", week_matched: 31, viewed: nil, year_matched: 2019},
+  {address: "82 CAMPANIA CRES, Toronto, ON, M1V2E9", code: "ALFQUQNA", dd_key: "17", matched_on: "2019-07-31", week_matched: 31, viewed: nil, year_matched: 2019},
+  {address: "59 ANNIE CRAIG DR W 1808, Toronto, ON, M8V0C5", code: "E9WRAFM3", dd_key: "16", matched_on: "2019-07-31", week_matched: 31, viewed: nil, year_matched: 2019},
+  {address: "800 LAWRENCE AVE W 1619, Toronto, ON, M6A1C3", code: "23H349SV", dd_key: "15", matched_on: "2019-07-31", week_matched: 31, viewed: nil, year_matched: 2019},
+  {address: "3650 Kingston Rd 154, Toronto, ON, M1M 3X9", code: "U3U8JS2H", dd_key: "14", matched_on: "2019-07-31", week_matched: 31, viewed: nil, year_matched: 2019},
+  {address: "68 Abell St, Toronto, ON", code: "N5CSW4GM", dd_key: "21", matched_on: "2019-07-29", week_matched: 31, viewed: nil, year_matched: 2019},
+  {address: "71 FRANEL CRES, Toronto, ON, M9L1B6", code: "XZHMPMEB", dd_key: "20", matched_on: "2019-07-29", week_matched: 31, viewed: nil, year_matched: 2019},
+  {address: "104 PURPLE SAGE WAY, Toronto, ON, M2H2Z7", code: "T5HF96UW", dd_key: "19", matched_on: "2019-07-29", week_matched: 31, viewed: nil, year_matched: 2019},
+  {address: "14 OXTON AVE, Toronto, ON, M5P1L9", code: "E8WTAPQK", dd_key: "18", matched_on: "2019-07-29", week_matched: 31, viewed: nil, year_matched: 2019},
+  {address: "5 WHITELOCK CRES, Toronto, ON, M2K1V9", code: "YRYRATF8", dd_key: "25", matched_on: "2019-07-25", week_matched: 30, viewed: nil, year_matched: 2019},
+  {address: "921 MIDLAND AVE 703, Toronto, ON, M1K4G2", code: "5ZHKFMLJ", dd_key: "24", matched_on: "2019-07-25", week_matched: 30, viewed: nil, year_matched: 2019},
+  {address: "185 LEGION RD N 1906, Toronto, ON, M8Y0A1", code: "N3LTH2SW", dd_key: "23", matched_on: "2019-07-25", week_matched: 30, viewed: nil, year_matched: 2019},
+  {address: "125 TREVERTON RD, Toronto, ON, M1K3T1", code: "9CWQWM6C", dd_key: "22", matched_on: "2019-07-25", week_matched: 30, viewed: nil, year_matched: 2019},
+  {address: "21 Ayr Cres, Toronto, ON, M9L2M5", code: "GAJM9MRP", dd_key: "28", matched_on: "2019-07-23", week_matched: 30, viewed: nil, year_matched: 2019},
+  {address: "142 WILLIAM DUNCAN RD, Toronto, ON, M3K0B5", code: "A3657HLW", dd_key: "27", matched_on: "2019-07-23", week_matched: 30, viewed: nil, year_matched: 2019},
+  {address: "7 Scotch Elmway 5, Toronto, ON, M4N3N4", code: "DNT3SHWB", dd_key: "26", matched_on: "2019-07-23", week_matched: 30, viewed: nil, year_matched: 2019},
+  {address: "401 LONGMORE ST, Toronto, ON, M2N5C2", code: "regfvd", dd_key: "6", matched_on: "2019-08-10", week_matched: 32, viewed: nil, year_matched: 2019},
+  {address: "15 Zorra St, Toronto, Ontario", code: "efggee", dd_key: "5", matched_on: "2019-08-10", week_matched: 32, viewed: nil, year_matched: 2019},
+  {address: "1990 BLOOR ST, Toronto, Ontario, M6P0B6", code: "refefre", dd_key: "6", matched_on: "2019-08-10", week_matched: 32, viewed: nil, year_matched: 2019}
+])

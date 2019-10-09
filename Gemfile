@@ -3,8 +3,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.3'
 
+gem 'seed_dump'
 gem 'rename'
-gem "letter_opener", :group => :development
 gem 'devise_invitable', '~> 2.0.1'
 gem 'pagy'
 gem 'devise-bootstrap-views'

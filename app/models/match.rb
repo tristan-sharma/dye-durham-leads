@@ -31,10 +31,34 @@ class Match < ApplicationRecord
         Match.create(address: NamaraNiqlStatementBuilder.address(c),
                      code: c,
                      dd_key: NamaraNiqlStatementBuilder.key(c),
-                     matched_on: DateTime.now, week_matched: DateTime.now.cweek, year_matched: Date.today.year)
+                     matched_on: DateTime.now, week_matched: get_week, year_matched: Date.today.year)
       end
     end
 
+  end
+
+  def self.get_week(return_week = false)
+    year = Date.today.year
+    year_range = [*year - 1..year + 1]
+    week_number = -1
+    weeks_range = [*1..52]
+    current_week_obj = nil
+    year_range.each do |y|
+      # Iterate over all weeks in the year to see which one includes provided date
+      weeks_range.each do |week|
+        # Set start day of week to sunday
+        full_weeks_range = Date.commercial(y, week).all_week(:sunday).to_a
+        if full_weeks_range.include? Date.today
+          week_number = week
+          current_week_obj = full_weeks_range
+          break
+        end
+      end
+    end
+    unless return_week
+      return week_number
+    end
+    current_week_obj
   end
 
   def self.year_organized(year = 2019, start_week = 1)
