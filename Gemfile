@@ -3,6 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.3'
 
+gem 'mailgun-ruby', '~>1.1.6'
 gem 'seed_dump'
 gem 'rename'
 gem 'devise_invitable', '~> 2.0.1'
