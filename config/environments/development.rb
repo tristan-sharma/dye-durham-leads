@@ -10,15 +10,7 @@ Rails.application.configure do
 config.action_mailer.perform_deliveries = true
 config.action_mailer.raise_delivery_errors = true
 
-config.action_mailer.delivery_method = :smtp
-config.action_mailer.smtp_settings = {
-  :authentication => :plain,
-  :address => "smtp.mailgun.org",
-  :port => 587,
-  :domain => "sandboxbdc57fe4809b43b5b3676de42ccd5449.mailgun.org",
-  :user_name => "postmaster@sandboxbdc57fe4809b43b5b3676de42ccd5449.mailgun.org",
-  :password => "eac65ad4cbdedf3fa49a12852230586b-9949a98f-9a2f332b"
-}
+
 
   # In the development environment your application's code is reloaded on
   # every request. This slows down response time but is perfect for development
