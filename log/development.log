@@ -18962,3 +18962,1347 @@ Processing by MatchesController#index as HTML
 Completed 200 OK in 91ms (Views: 6.4ms | ActiveRecord: 10.8ms | Allocations: 96544)
 
 
+Started GET "/" for ::1 at 2019-10-10 20:05:36 -0400
+Processing by MatchesController#index as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMatch Load (0.4ms)[0m  [1m[34mSELECT "matches".* FROM "matches" ORDER BY "matches"."matched_on" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:41:in `index'
+  [1m[36mMatch Load (0.2ms)[0m  [1m[34mSELECT "matches".* FROM "matches" ORDER BY "matches"."matched_on" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:42:in `index'
+  [1m[36mMatch Load (0.4ms)[0m  [1m[34mSELECT "matches".* FROM "matches" ORDER BY "matches"."matched_on" ASC[0m
+  ↳ app/controllers/matches_controller.rb:167:in `index'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT DISTINCT "matches"."year_matched" FROM "matches" ORDER BY year_matched ASC[0m
+  ↳ app/controllers/matches_controller.rb:176:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT DISTINCT "matches"."week_matched" FROM "matches" WHERE "matches"."year_matched" = $1 ORDER BY "matches"."week_matched" ASC[0m  [["year_matched", 2019]]
+  ↳ app/controllers/matches_controller.rb:180:in `block in index'
+  [1m[36mMatch Load (0.2ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-21"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.2ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-22"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.2ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-23"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mUserMatchState Load (0.4ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 27], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 27]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.2ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 26]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.2ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 25], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 25]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-24"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.2ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-25"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mUserMatchState Load (0.3ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 24]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.2ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 23]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.2ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 22]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 21]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mMatch Load (0.2ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-26"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-27"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.2ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-28"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-29"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 20]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 19]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.2ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 18]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 17]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mMatch Load (0.2ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-30"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-31"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 16]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.2ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 15]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 14]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 13]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mMatch Load (0.2ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-08-01"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 12]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 11]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 10]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-08-02"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.2ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-08-03"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.2ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-08-04"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-08-05"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-08-06"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-08-07"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mUserMatchState Load (0.2ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 7]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 6]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.2ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 5]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-08-08"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 9]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 8]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-08-09"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.2ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-08-10"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 4]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 3]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 2]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+Redirected to http://localhost:3000/?cm=3&puid=MTQ%3D
+Completed 302 Found in 228ms (ActiveRecord: 15.3ms | Allocations: 90340)
+
+
+Started GET "/?cm=3&puid=MTQ%3D" for ::1 at 2019-10-10 20:05:36 -0400
+Processing by MatchesController#index as HTML
+  Parameters: {"cm"=>"3", "puid"=>"MTQ="}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMatch Load (0.3ms)[0m  [1m[34mSELECT "matches".* FROM "matches" ORDER BY "matches"."matched_on" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:41:in `index'
+  [1m[36mMatch Load (0.2ms)[0m  [1m[34mSELECT "matches".* FROM "matches" ORDER BY "matches"."matched_on" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:42:in `index'
+  [1m[36mMatch Load (0.3ms)[0m  [1m[34mSELECT "matches".* FROM "matches" ORDER BY "matches"."matched_on" ASC[0m
+  ↳ app/controllers/matches_controller.rb:167:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT DISTINCT "matches"."year_matched" FROM "matches" ORDER BY year_matched ASC[0m
+  ↳ app/controllers/matches_controller.rb:176:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT DISTINCT "matches"."week_matched" FROM "matches" WHERE "matches"."year_matched" = $1 ORDER BY "matches"."week_matched" ASC[0m  [["year_matched", 2019]]
+  ↳ app/controllers/matches_controller.rb:180:in `block in index'
+  [1m[36mMatch Load (0.2ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-21"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.2ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-22"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-23"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 27], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 27]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.2ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 26]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 25], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 25]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-24"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-25"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 24]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 23]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 22]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.2ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 21]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-26"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-27"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-28"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-29"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 20]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.2ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 19]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 18]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.2ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 17]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-30"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-31"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 16]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 15]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 14]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 13]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-08-01"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 12]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 11]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 10]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-08-02"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-08-03"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.2ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-08-04"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-08-05"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-08-06"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-08-07"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mUserMatchState Load (0.2ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 7]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 6]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.2ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 5]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-08-08"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 9]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 8]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mMatch Load (0.2ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-08-09"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.2ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-08-10"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 4]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 3]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 2]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  Rendering matches/index.html.erb within layouts/application
+  Rendered matches/index.html.erb within layouts/application (Duration: 9.9ms | Allocations: 2362)
+Completed 200 OK in 146ms (Views: 47.8ms | ActiveRecord: 11.4ms | Allocations: 96547)
+
+
+Started GET "/" for ::1 at 2019-10-10 20:05:43 -0400
+Processing by MatchesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMatch Load (0.3ms)[0m  [1m[34mSELECT "matches".* FROM "matches" ORDER BY "matches"."matched_on" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:41:in `index'
+  [1m[36mMatch Load (0.3ms)[0m  [1m[34mSELECT "matches".* FROM "matches" ORDER BY "matches"."matched_on" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:42:in `index'
+  [1m[36mMatch Load (0.4ms)[0m  [1m[34mSELECT "matches".* FROM "matches" ORDER BY "matches"."matched_on" ASC[0m
+  ↳ app/controllers/matches_controller.rb:167:in `index'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT DISTINCT "matches"."year_matched" FROM "matches" ORDER BY year_matched ASC[0m
+  ↳ app/controllers/matches_controller.rb:176:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT DISTINCT "matches"."week_matched" FROM "matches" WHERE "matches"."year_matched" = $1 ORDER BY "matches"."week_matched" ASC[0m  [["year_matched", 2019]]
+  ↳ app/controllers/matches_controller.rb:180:in `block in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-21"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.2ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-22"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.2ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-23"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 27], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 27]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.2ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 26]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 25], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 25]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-24"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-25"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 24]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 23]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 22]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 21]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-26"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.2ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-27"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-28"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-29"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mUserMatchState Load (0.2ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 20]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 19]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.2ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 18]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 17]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-30"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-31"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 16]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 15]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 14]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.2ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 13]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-08-01"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 12]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 11]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 10]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-08-02"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-08-03"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-08-04"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-08-05"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-08-06"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-08-07"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 7]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.2ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 6]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 5]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mMatch Load (0.2ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-08-08"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 9]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 8]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-08-09"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-08-10"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 4]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 3]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 2]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+Redirected to http://localhost:3000/?cm=3&puid=MTQ%3D
+Completed 302 Found in 116ms (ActiveRecord: 11.5ms | Allocations: 90176)
+
+
+Started GET "/?cm=3&puid=MTQ%3D" for ::1 at 2019-10-10 20:05:43 -0400
+Processing by MatchesController#index as HTML
+  Parameters: {"cm"=>"3", "puid"=>"MTQ="}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMatch Load (0.2ms)[0m  [1m[34mSELECT "matches".* FROM "matches" ORDER BY "matches"."matched_on" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:41:in `index'
+  [1m[36mMatch Load (0.2ms)[0m  [1m[34mSELECT "matches".* FROM "matches" ORDER BY "matches"."matched_on" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:42:in `index'
+  [1m[36mMatch Load (0.3ms)[0m  [1m[34mSELECT "matches".* FROM "matches" ORDER BY "matches"."matched_on" ASC[0m
+  ↳ app/controllers/matches_controller.rb:167:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT DISTINCT "matches"."year_matched" FROM "matches" ORDER BY year_matched ASC[0m
+  ↳ app/controllers/matches_controller.rb:176:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT DISTINCT "matches"."week_matched" FROM "matches" WHERE "matches"."year_matched" = $1 ORDER BY "matches"."week_matched" ASC[0m  [["year_matched", 2019]]
+  ↳ app/controllers/matches_controller.rb:180:in `block in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-21"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-22"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-23"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 27], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 27]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 26]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 25], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 25]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-24"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-25"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 24]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 23]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 22]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 21]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-26"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-27"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-28"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-29"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 20]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 19]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 18]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 17]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-30"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-31"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 16]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 15]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 14]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 13]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-08-01"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 12]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 11]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 10]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-08-02"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-08-03"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.2ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-08-04"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-08-05"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-08-06"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-08-07"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mUserMatchState Load (0.2ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 7]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 6]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.2ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 5]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-08-08"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 9]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 8]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-08-09"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-08-10"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 4]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 3]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 2]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  Rendering matches/index.html.erb within layouts/application
+  Rendered matches/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 2362)
+Completed 200 OK in 95ms (Views: 6.4ms | ActiveRecord: 10.7ms | Allocations: 96538)
+
+
+Started GET "/" for ::1 at 2019-10-10 20:05:44 -0400
+Processing by MatchesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMatch Load (0.3ms)[0m  [1m[34mSELECT "matches".* FROM "matches" ORDER BY "matches"."matched_on" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:41:in `index'
+  [1m[36mMatch Load (0.2ms)[0m  [1m[34mSELECT "matches".* FROM "matches" ORDER BY "matches"."matched_on" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:42:in `index'
+  [1m[36mMatch Load (0.4ms)[0m  [1m[34mSELECT "matches".* FROM "matches" ORDER BY "matches"."matched_on" ASC[0m
+  ↳ app/controllers/matches_controller.rb:167:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT DISTINCT "matches"."year_matched" FROM "matches" ORDER BY year_matched ASC[0m
+  ↳ app/controllers/matches_controller.rb:176:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT DISTINCT "matches"."week_matched" FROM "matches" WHERE "matches"."year_matched" = $1 ORDER BY "matches"."week_matched" ASC[0m  [["year_matched", 2019]]
+  ↳ app/controllers/matches_controller.rb:180:in `block in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-21"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.2ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-22"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-23"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mUserMatchState Load (0.2ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 27], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 27]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 26]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 25], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 25]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-24"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-25"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 24]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.2ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 23]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 22]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 21]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-26"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-27"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.2ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-28"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-29"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 20]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.2ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 19]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 18]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.2ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 17]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-30"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-31"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 16]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 15]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.2ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 14]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 13]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mMatch Load (0.2ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-08-01"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 12]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.2ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 11]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 10]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-08-02"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-08-03"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-08-04"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-08-05"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.2ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-08-06"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-08-07"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 7]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 6]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 5]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mMatch Load (0.4ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-08-08"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 9]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 8]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-08-09"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-08-10"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 4]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 3]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 2]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+Redirected to http://localhost:3000/?cm=3&puid=MTQ%3D
+Completed 302 Found in 112ms (ActiveRecord: 11.4ms | Allocations: 90180)
+
+
+Started GET "/?cm=3&puid=MTQ%3D" for ::1 at 2019-10-10 20:05:44 -0400
+Processing by MatchesController#index as HTML
+  Parameters: {"cm"=>"3", "puid"=>"MTQ="}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMatch Load (0.2ms)[0m  [1m[34mSELECT "matches".* FROM "matches" ORDER BY "matches"."matched_on" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:41:in `index'
+  [1m[36mMatch Load (0.2ms)[0m  [1m[34mSELECT "matches".* FROM "matches" ORDER BY "matches"."matched_on" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:42:in `index'
+  [1m[36mMatch Load (0.3ms)[0m  [1m[34mSELECT "matches".* FROM "matches" ORDER BY "matches"."matched_on" ASC[0m
+  ↳ app/controllers/matches_controller.rb:167:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT DISTINCT "matches"."year_matched" FROM "matches" ORDER BY year_matched ASC[0m
+  ↳ app/controllers/matches_controller.rb:176:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT DISTINCT "matches"."week_matched" FROM "matches" WHERE "matches"."year_matched" = $1 ORDER BY "matches"."week_matched" ASC[0m  [["year_matched", 2019]]
+  ↳ app/controllers/matches_controller.rb:180:in `block in index'
+  [1m[36mMatch Load (0.2ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-21"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.2ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-22"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-23"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 27], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 27]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 26]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 25], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 25]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mMatch Load (0.2ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-24"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-25"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 24]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 23]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 22]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 21]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-26"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-27"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-28"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.2ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-29"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 20]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 19]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 18]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 17]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-30"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-31"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 16]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 15]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.2ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 14]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 13]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-08-01"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 12]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 11]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 10]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-08-02"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-08-03"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-08-04"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-08-05"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-08-06"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-08-07"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 7]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 6]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 5]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-08-08"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 9]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 8]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-08-09"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-08-10"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 4]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 3]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.2ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 2]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  Rendering matches/index.html.erb within layouts/application
+  Rendered matches/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 2362)
+Completed 200 OK in 96ms (Views: 6.3ms | ActiveRecord: 10.9ms | Allocations: 96542)
+
+
+Started GET "/" for ::1 at 2019-10-10 20:05:48 -0400
+Processing by MatchesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMatch Load (0.3ms)[0m  [1m[34mSELECT "matches".* FROM "matches" ORDER BY "matches"."matched_on" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:41:in `index'
+  [1m[36mMatch Load (0.2ms)[0m  [1m[34mSELECT "matches".* FROM "matches" ORDER BY "matches"."matched_on" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:42:in `index'
+  [1m[36mMatch Load (0.4ms)[0m  [1m[34mSELECT "matches".* FROM "matches" ORDER BY "matches"."matched_on" ASC[0m
+  ↳ app/controllers/matches_controller.rb:167:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT DISTINCT "matches"."year_matched" FROM "matches" ORDER BY year_matched ASC[0m
+  ↳ app/controllers/matches_controller.rb:176:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT DISTINCT "matches"."week_matched" FROM "matches" WHERE "matches"."year_matched" = $1 ORDER BY "matches"."week_matched" ASC[0m  [["year_matched", 2019]]
+  ↳ app/controllers/matches_controller.rb:180:in `block in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-21"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.2ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-22"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.2ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-23"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 27], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 27]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 26]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.2ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 25], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 25]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mMatch Load (0.2ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-24"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-25"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mUserMatchState Load (0.2ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 24]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.2ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 23]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 22]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 21]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-26"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-27"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-28"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-29"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 20]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 19]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 18]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 17]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-30"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-31"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 16]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 15]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 14]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 13]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-08-01"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 12]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 11]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 10]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-08-02"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-08-03"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-08-04"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-08-05"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-08-06"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-08-07"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 7]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 6]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 5]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-08-08"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 9]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 8]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-08-09"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-08-10"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 4]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 3]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 2]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+Redirected to http://localhost:3000/?cm=3&puid=MTQ%3D
+Completed 302 Found in 113ms (ActiveRecord: 11.1ms | Allocations: 90176)
+
+
+Started GET "/?cm=3&puid=MTQ%3D" for ::1 at 2019-10-10 20:05:48 -0400
+Processing by MatchesController#index as HTML
+  Parameters: {"cm"=>"3", "puid"=>"MTQ="}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMatch Load (0.2ms)[0m  [1m[34mSELECT "matches".* FROM "matches" ORDER BY "matches"."matched_on" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:41:in `index'
+  [1m[36mMatch Load (0.2ms)[0m  [1m[34mSELECT "matches".* FROM "matches" ORDER BY "matches"."matched_on" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:42:in `index'
+  [1m[36mMatch Load (0.3ms)[0m  [1m[34mSELECT "matches".* FROM "matches" ORDER BY "matches"."matched_on" ASC[0m
+  ↳ app/controllers/matches_controller.rb:167:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT DISTINCT "matches"."year_matched" FROM "matches" ORDER BY year_matched ASC[0m
+  ↳ app/controllers/matches_controller.rb:176:in `index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT DISTINCT "matches"."week_matched" FROM "matches" WHERE "matches"."year_matched" = $1 ORDER BY "matches"."week_matched" ASC[0m  [["year_matched", 2019]]
+  ↳ app/controllers/matches_controller.rb:180:in `block in index'
+  [1m[36mMatch Load (0.2ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-21"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-22"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-23"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 27], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 27]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 26]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.2ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 25], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 25]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-24"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.2ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-25"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mUserMatchState Load (0.2ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 24]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 23]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 22]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 21]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-26"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-27"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-28"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-29"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mUserMatchState Load (0.2ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 20]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 19]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.2ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 18]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 17]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-30"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-07-31"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 16]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.2ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 15]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 14]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 13]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-08-01"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 12]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 11]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 10]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-08-02"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-08-03"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.2ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-08-04"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.2ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-08-05"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-08-06"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-08-07"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mUserMatchState Load (0.2ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 7]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 6]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 5]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-08-08"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 9]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 8]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mMatch Load (0.1ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-08-09"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mMatch Load (0.2ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."matched_on" = $1[0m  [["matched_on", "2019-08-10"]]
+  ↳ app/controllers/matches_controller.rb:217:in `block (3 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 4]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 3]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 2]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  [1m[36mUserMatchState Load (0.1ms)[0m  [1m[34mSELECT "user_match_states".* FROM "user_match_states" WHERE "user_match_states"."user_id" = $1 AND "user_match_states"."match_id" = $2 ORDER BY "user_match_states"."id" ASC LIMIT $3[0m  [["user_id", 2], ["match_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/matches_controller.rb:218:in `block (4 levels) in index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "matches"."dd_key" FROM "matches" WHERE "matches"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/matches_controller.rb:219:in `block (4 levels) in index'
+  Rendering matches/index.html.erb within layouts/application
+  Rendered matches/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 2362)
+Completed 200 OK in 95ms (Views: 6.2ms | ActiveRecord: 10.8ms | Allocations: 96540)
+
+
